@@ -3,10 +3,27 @@
 int main(){
     FILE* fp;
     char *fname = "field.csv";
-    
 
-    fp = fopen(fname, "w");
+    int player = 1;
+
+    fp = fopen(fname, "r");
+    if(fp == NULL){
+        fclose(fp);
+        fp = fopen(fname, "w");
+    }
+
+
+
+
+
+
+
+
+
+
     fclose(fp);
+
+
 
     return 0;
 }
