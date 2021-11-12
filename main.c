@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int isOn(int, int);
+int isUsed(int, int);
 int faul(int, int);
 
 int main(){
@@ -47,7 +47,7 @@ int main(){
     }
 
     //碁石があるかの確認
-    isOn(x, y);
+    isUsed(x, y);
 
     //禁手確認
     if(player == 1) faul(x, y);
@@ -83,7 +83,7 @@ int main(){
 }
 
 //石が置いてあるかどうか
-int isOn(int x, int y){
+int isUsed(int x, int y){
     return 0;
 }
 
