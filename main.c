@@ -11,7 +11,7 @@ int main(){
 
     int cnt = 0;//文字数
     int charcnt = 0;
-    int turn = 0;
+    int turn = 1;
     char* field = "";
     char buf[1000];
 
@@ -57,9 +57,7 @@ int main(){
 
 
     //ターン数の設定
-    if(cnt == 0){
-        turn = 0;
-    }else{
+    if(cnt != 0){
         fseek(fp, 0, SEEK_SET);
         turn = fgetc(fp) - '0' + 1;
         printf("%d/n", turn);
